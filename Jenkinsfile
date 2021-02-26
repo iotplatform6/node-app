@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Building node app'
         sh 'npm install'
-        archiveArtifacts(artifacts: 'package.log', fingerprint: true)
+        archiveArtifacts(artifacts: 'package.json', fingerprint: true)
       }
     }
 
